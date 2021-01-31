@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+pyyaml
+scikit-learn
+matplotlib
+
+gensim
+#tensorflow-gpu
+tensorflow==1.15

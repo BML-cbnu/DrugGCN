@@ -1,0 +1,59 @@
+# PPI Network Data
+PPI_data : Data/L1000/groupPPI.csv
+
+# Drug-Respond data (IC50, AUC)  
+Respond_data : Data/Table_S6_GDSC_Drug_response_IC50.csv
+
+# Gene Expression (L1000, Variance1000)
+Gene_data : Data/L1000/groupEXP.csv
+
+# n-fold Cross Validation
+n_fold : 3
+
+# Test data size
+test_size : 0.25
+# Number of training epochs.
+num_epochs : 40
+# Batch size : Must divide evenly into the dataset sizes.
+batch_size : 4
+
+# bias and relu (b1relu, b2relu)
+brelu : b1relu
+
+# Pooling
+pool : mpool1
+
+# L2 regularizations of weights and biases.
+regularization : 0
+
+# Dropout (fc layers): probability to keep hidden neurons. 1 means no dropout.
+dropout : 1
+
+# Initial learning rate.
+learning_rate : 0.02
+
+# Base of exponential decay. 1 means no decay.
+decay_rate : 0.95
+
+# momentum 
+momentum : 0.9
+
+Name : cgnonv_softmax
+
+# Number of features.
+F : [10]
+
+# List of polynomial orders, (Filter sizes)
+K : [20]
+
+# Pooling size
+p : [8]
+
+# FC Layer size
+M : [1]
+
+krl_k : 10
+n_jobs : 4
+Gamma : None
+Lambda : 1
+verbose : True
