@@ -1,8 +1,8 @@
 # PPI Network Data
 PPI_data : Data/L1000/groupPPI.csv
 
-# Drug-Response data (IC50, AUC)  
-Response_data : Data/Table_S6_GDSC_Drug_response_IC50.csv
+# Drug-Respond data (IC50, AUC)  
+Respond_data : Data/Table_S6_GDSC_Drug_response_IC50.csv
 
 # Gene Expression (L1000, Variance1000)
 Gene_data : Data/L1000/groupEXP.csv
@@ -34,7 +34,7 @@ dropout : 1
 # Initial learning rate.
 learning_rate : 0.02
 
-# Base of exponential decay. 1 means no decay.
+# Base of exponential decay. 1 means no deacy.
 decay_rate : 0.95
 
 # momentum 
