@@ -59,3 +59,5 @@ n_jobs : 4
 Gamma : None
 Lambda : 1
 verbose : True
+# KRR, MLP, BR, KRL, RWEN
+Evaluation : KRR

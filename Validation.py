@@ -1,5 +1,5 @@
 import numpy as np
-
+import os
 def Validation(n_fold,X,Y):
     list_train_fold = []
     list_val_fold = []
@@ -24,4 +24,13 @@ def Validation(n_fold,X,Y):
             list_val_fold.append(list_val)
         
     return list_train_fold, list_val_fold
-            
+
+
+def createFolder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print ('Error: Creating directory. ' +  directory)
+ 
+
