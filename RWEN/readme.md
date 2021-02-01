@@ -1,4 +1,10 @@
-## Run RWEN Code.
+## Installation
+
+in R:
+
+    install.packages("glmnet)
+
+## Run RWEN code.
 
     rscript RWEN_Testing.R (Gene Data) (Response Data) (Path to save) (n_fold) (Test size)
 
