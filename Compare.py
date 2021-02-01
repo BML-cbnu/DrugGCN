@@ -2,7 +2,7 @@ import yaml
 import sys
 import pandas as pd
 import numpy as np
-from Validation import Validation
+from Validation import Validation, createFolder
 from sklearn.model_selection import train_test_split
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.ensemble import RandomForestRegressor
@@ -13,6 +13,7 @@ from sklearn.preprocessing import MinMaxScaler
 from KRL.KRL import KRL 
 
 def main():
+    createFolder('Result')
     config_file = sys.argv[1]
     with open(config_file, 'r') as f:
         config = yaml.load(f)

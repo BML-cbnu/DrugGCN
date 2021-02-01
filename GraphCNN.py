@@ -5,7 +5,7 @@ import numpy as np
 import time
 import pandas as pd
 import tensorflow as tf
-from Validation import Validation
+from Validation import Validation, createFolder
 from scipy.sparse import coo_matrix
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
@@ -17,6 +17,7 @@ from scipy.sparse import coo_matrix
 
             
 def main():
+    createFolder('Result')
     config_file = sys.argv[1]
     with open(config_file, 'r') as f:
         config = yaml.load(f)
