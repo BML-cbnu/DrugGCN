@@ -1,0 +1,8 @@
+rscript RWEN_Testing.R (Gene Data) (Response Data) (저장 경로) (n_fold) (Test size)
+1) Gene Data
+2) Response Data
+3) 저장 경로
+4) n_fold (int)
+5. Test_size (float)
+
+rscript RWEN_Testing.R C:/R/R-4.0.3/L1000_GEXP.csv C:/R/R-4.0.3/Scale_IC50.csv /Users/82107/Desktop 3 0.25
