@@ -27,7 +27,7 @@ Input:
 
 Output:
 
-    Y_pred : y * d ( y is a validation part of n )
+    Y_pred : y * d ( y is a test set of n )
 
 ## Reproducing our experiments
    
